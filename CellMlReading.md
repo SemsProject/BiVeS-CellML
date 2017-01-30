@@ -1,11 +1,12 @@
 Read CellML Documents 
 ======================
+
 Parse a CellML Document 
 ------------------------
-The easiest way to parse CellML documents is using the [validator](http://sems.uni-rostock.de/trac/bives-core/wiki///ModelValidator). It will validate the file and provides you with the occurred error if the document is not valid. However, if the document is valid you get the CellML model for free:
 
-```
-#!java
+The easiest way to parse CellML documents is using the [validator](http://sems.uni-rostock.de/trac/bives-core/wiki/ModelValidator). It will validate the file and provides you with the occurred error if the document is not valid. However, if the document is valid you get the CellML model for free:
+
+```java
 // create a CellML validator
 CellMLValidator validator = new CellMLValidator ();
 
@@ -18,14 +19,14 @@ if (!validator.validate (document))
 CellMLDocument doc = validator.getDocument ();
 ```
 
-You may provide the *```document```* as an XML string, a File object pointing to a file on the disk, a URL to a model on the internet, or an already parsed [TreeDocument](http://sems.uni-rostock.de/trac/xmlutils/wiki///HowTo#TreeDocument). Please read [ModelRetriever](http://sems.uni-rostock.de/trac/bives-core/wiki///ModelRetriever) to learn how to restrict the **access to local/remote files**. (see also /src/test/java/de/unirostock/sems/ParseExample.java)
+You may provide the *```document```* as an XML string, a File object pointing to a file on the disk, a URL to a model on the internet, or an already parsed [TreeDocument](http://sems.uni-rostock.de/trac/xmlutils/wiki/HowTo#TreeDocument). Please read [ModelRetriever](http://sems.uni-rostock.de/trac/bives-core/wiki/ModelRetriever) to learn how to restrict the **access to local/remote files**. (see also [ParseExample.java](https://github.com/SemsProject/BiVeS-CellML/blob/master/src/test/java/de/unirostock/sems/ParseExample.java))
 
 Extract use the model of a document 
 ------------------------------------
+
 The API provides a lot of methods to interact with CellML models. Here is just a small example:
 
-```
-#!java
+```java
 // get model
 CellMLModel model = doc.getModel ();
 
@@ -54,4 +55,4 @@ CellMLHierarchyNode hNodeParent = hNode.getParent ();
 List<CellMLHierarchyNode> hNodeKids = hNode.getChildren ();
 ```
 
-see also /src/test/java/de/unirostock/sems/ParseExample.java
+see also [ParseExample.java](https://github.com/SemsProject/BiVeS-CellML/blob/master/src/test/java/de/unirostock/sems/ParseExample.java)

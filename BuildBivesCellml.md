@@ -1,25 +1,22 @@
-Build /Bives-CellML 
+Build Bives-CellML 
 ====================
+
 When you've cloned the source code:
 
-```
-#!sh
+```sh
 git clone git://sems.uni-rostock.de/bives-cellml
 ```
 
 There are two supported options to build this project:
 
-* [Build with Maven](//BuildBivesCore#BuildwithMaven)
-* [Build with Ant](//BuildBivesCore#BuildwithAnt)
-
-
+* [Build with Maven](#build-with-maven)
+* [Build with Ant](#build-with-ant)
 
 Build with Maven 
 -----------------
 [Maven](https://maven.apache.org/) is a build automation tool. We ship a [source:pom.xml pom.xml] together with the sources which tells maven about versions and dependencies. Thus, maven is able to resolve everything on its own and, in order to create the library, all you need to call is ```mvn package```:
 
-```
-#!sh
+```sh
 usr@srv $ mvn package
 
 -------------------------------------------------------
@@ -39,13 +36,13 @@ That done, you'll find the binaries in the ```target``` directory.
 
 Build with Ant 
 ---------------
-[Ant](https://ant.apache.org/) is an Apache tool for automating software build processes. There is a [source:build.xml build.xml] file included in the source code that tells ant what to do. Since ant is not able to resolve the dependencies you need to create a directory ```lib``` containing the following libraries:
-* [bives-core:wiki /BiVeS-Core] (downloaded latest binary from http://bin.sems.uni-rostock.de or see http://sems.uni-rostock.de/trac/bives-core/wiki//BuildBivesCore)
+[Ant](https://ant.apache.org/) is an Apache tool for automating software build processes. There is a build.xml file included in the source code that tells ant what to do. Since ant is not able to resolve the dependencies you need to create a directory ```lib``` containing the following libraries:
+
+* [BiVeS-Core](http://sems.uni-rostock.de/trac/bives-core/wiki] (downloaded latest binary from http://bin.sems.uni-rostock.de or see http://sems.uni-rostock.de/trac/bives-core/wiki//BuildBivesCore)
 
 We defined multiple targets in the ```build.xml`. They can be displayed by calling `ant -p```:
 
-```
-#!sh
+```sh
 usr@srv $ ant -p
 Buildfile: /path/to/BiVeS-CellML/build.xml
 
@@ -69,8 +66,7 @@ Default target: dist
 
 For example, to create the jar library just run ```ant dist```:
 
-```
-#!sh
+```sh
 usr@srv $ ant dist
 Buildfile: /path/to/BiVeS-CellML/build.xml
 
