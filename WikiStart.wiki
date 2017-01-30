@@ -1,0 +1,34 @@
+= CellML Utils for the BiVeS-Library =
+
+* see CellML package: source:src/main/java/de/unirostock/sems/bives/cellml
+* see [[CellML-API]] extension of the bives-core:wiki:API
+* '''read''' CellML documents: CellMlReading
+* how we '''flatten''' models: FlattenModels
+* include XMLUtils via Maven: ([http://mvn.sems.uni-rostock.de/releases/de/unirostock/sems/BiVeS-CellML/ find latest version id], import the [https://sems.uni-rostock.de/2013/10/maven-repository/ SEMS Maven repository])
+{{{
+#!xml
+<dependency>
+    <groupId>de.unirostock.sems</groupId>
+    <artifactId>BiVeS-CellML</artifactId>
+    <version>$VERSION</version>
+</dependency>
+}}}
+
+
+== Build ==
+
+* learn how to BuildBivesCellml
+
+== External Resources ==
+* about CellML: http://www.cellml.org/about
+* CellML model repository: http://models.cellml.org/cellml
+* CellML specifications: http://www.cellml.org/specifications
+
+== Starting Points ==
+
+ * TracGuide --  Built-in Documentation
+ * [http://trac.edgewall.org/ The Trac project] -- Trac Open Source Project
+ * [http://trac.edgewall.org/wiki/TracFaq Trac FAQ] -- Frequently Asked Questions
+ * TracSupport --  Trac Support
+
+For a complete list of local wiki pages, see TitleIndex.
