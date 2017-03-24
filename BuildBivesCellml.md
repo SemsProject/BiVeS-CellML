@@ -4,7 +4,7 @@ Build Bives-CellML
 When you've cloned the source code:
 
 ```sh
-git clone git://sems.uni-rostock.de/bives-cellml
+git clone git@github.com:SemsProject/BiVeS-CellML.git
 ```
 
 There are two supported options to build this project:
