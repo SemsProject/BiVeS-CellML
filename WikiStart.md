@@ -23,7 +23,7 @@ Build
 External Resources 
 -------------------
 
-* about CellML: http://www.cellml.org/about
-* CellML model repository: http://models.cellml.org/cellml
-* CellML specifications: http://www.cellml.org/specifications
+* about CellML: <http://www.cellml.org/about>
+* CellML model repository: <http://models.cellml.org/cellml>
+* CellML specifications: <http://www.cellml.org/specifications>
 
