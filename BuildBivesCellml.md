@@ -4,7 +4,7 @@ Build Bives-CellML
 When you've cloned the source code:
 
 ```sh
-git clone git@github.com:SemsProject/BiVeS-CellML.git
+git clone https://github.com/SemsProject/BiVeS-CellML
 ```
 
 There are two supported options to build this project:
@@ -38,9 +38,9 @@ Build with Ant
 ---------------
 [Ant](https://ant.apache.org/) is an Apache tool for automating software build processes. There is a build.xml file included in the source code that tells ant what to do. Since ant is not able to resolve the dependencies you need to create a directory ```lib``` containing the following libraries:
 
-* [BiVeS-Core](http://sems.uni-rostock.de/trac/bives-core/wiki) (downloaded latest binary from http://bin.sems.uni-rostock.de or see http://sems.uni-rostock.de/trac/bives-core/wiki//BuildBivesCore )
+* [BiVeS-Core](http://sems.uni-rostock.de/trac/bives-core/wiki) (downloaded latest binary from [bin.sems.uni-rostock.de](http://bin.sems.uni-rostock.de) or see [sems.uni-rostock.de/trac/bives-core/wiki//BuildBivesCore](http://sems.uni-rostock.de/trac/bives-core/wiki//BuildBivesCore))
 
-We defined multiple targets in the ```build.xml`. They can be displayed by calling `ant -p```:
+We defined multiple targets in the `build.xml`. They can be displayed by calling `ant -p`:
 
 ```sh
 usr@srv $ ant -p
